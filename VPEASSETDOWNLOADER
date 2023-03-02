@@ -1,0 +1,206 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local VapeIntro = Instance.new("ScreenGui")
+local Assets = Instance.new("TextLabel")
+
+--Properties:
+
+VapeIntro.Name = "VapeIntro"
+VapeIntro.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+VapeIntro.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Assets.Name = "Assets"
+Assets.Parent = VapeIntro
+Assets.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Assets.BackgroundTransparency = 1.000
+Assets.Position = UDim2.new(0.275256217, 0, -0.0156250037, 0)
+Assets.Size = UDim2.new(0, 614, 0, 50)
+Assets.Font = Enum.Font.Gotham
+Assets.Text = "Downloading Vape/Data"
+Assets.TextColor3 = Color3.fromRGB(235, 235, 235)
+Assets.TextScaled = true
+Assets.TextSize = 14.000
+Assets.TextStrokeTransparency = 0.300
+Assets.TextWrapped = true
+
+-- Scripts:
+
+local function XKJLBD_fake_script() -- Assets.LocalScript 
+	local script = Instance.new('LocalScript', Assets)
+
+	local Timer = 0.1
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Asset0.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Asset1.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo1.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo2.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo3.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo4.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Config.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Warning.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Question.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Scripts/godmode.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Scripts/others.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeData.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo4.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Png.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/NewMainGui.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Whitelist.txt"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Auth.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Frame.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Shadow.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Corner.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Asset0.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Asset1.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo1.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo2.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo3.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo4.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Config.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Warning.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Question.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Scripts/godmode.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Scripts/others.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeData.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo4.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Png.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/NewMainGui.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Whitelist.txt"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Auth.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Frame.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Shadow.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Corner.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Asset0.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Asset1.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo1.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo2.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo3.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo4.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Config.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Warning.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Question.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Scripts/godmode.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Scripts/others.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeData.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo4.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Png.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/NewMainGui.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Whitelist.txt"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Auth.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Frame.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Shadow.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Corner.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Asset0.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Asset1.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo1.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo2.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo3.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo4.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Config.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Warning.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Question.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Scripts/godmode.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Scripts/others.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeData.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/VapeLogo4.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Png.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/NewMainGui.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Whitelist.txt"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Auth.lua"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Frame.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Shadow.png"
+	wait(Timer)
+	script.Parent.Text = "Downloading Vape/Data/Corner.png"
+	wait(Timer)
+	script.Parent.Parent:Destroy()
+end
+coroutine.wrap(XKJLBD_fake_script)()

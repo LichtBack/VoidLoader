@@ -1,0 +1,151 @@
+repeat task.wait() until game:IsLoaded()
+repeat task.wait() until shared.GuiLibrary
+local GuiLibrary = shared.GuiLibrary
+local ScriptSettings = {}
+local UIS = game:GetService("UserInputService")
+local LIB = function(tab, argstable) 
+    return GuiLibrary["ObjectsThatCanBeSaved"][tab.."Window"]["Api"].CreateOptionsButton(argstable)
+end
+
+function notify(text)
+    local frame = GuiLibrary["CreateNotification"]("Void Loader > Executed", text, 5, "assets/WarningNotification.png")
+    frame.Frame.Frame.ImageColor3 = Color3.fromRGB(40, 14, 71)
+end
+function boxnotify(text)
+    if messagebox then
+        messagebox(text, "Void", 0)
+     end
+end
+
+notify("Void Executed!")
+
+local InfiniteJump = LIB("Blatant", {
+    Name = "~> VoidJump",
+    Function = function(callback) 
+        if callback then
+			local InfiniteJumpEnabled = true
+			game:GetService("UserInputService").JumpRequest:connect(function()
+			if InfiniteJumpEnabled then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)
+        end
+    end,
+    Default = false,
+    HoverText = "InfJump >> Void"
+})
+
+local AestheticLightingV2 = LIB("Render", {
+    Name = "~> AstLight",
+    Function = function(callback) 
+        if callback then
+             local Lighting = game:GetService("Lighting")
+local StarterGui = game:GetService("StarterGui")
+local Bloom = Instance.new("BloomEffect")
+local Blur = Instance.new("BlurEffect")
+local ColorCor = Instance.new("ColorCorrectionEffect")
+local SunRays = Instance.new("SunRaysEffect")
+local Sky = Instance.new("Sky")
+local Atm = Instance.new("Atmosphere")
+
+
+for i, v in pairs(Lighting:GetChildren()) do
+	if v then
+		v:Destroy()
+	end
+end
+
+Bloom.Parent = Lighting
+Blur.Parent = Lighting
+ColorCor.Parent = Lighting
+SunRays.Parent = Lighting
+Sky.Parent = Lighting
+Atm.Parent = Lighting
+
+if Vignette == true then
+	local Gui = Instance.new("ScreenGui")
+	Gui.Parent = StarterGui
+	Gui.IgnoreGuiInset = true
+	
+	local ShadowFrame = Instance.new("ImageLabel")
+	ShadowFrame.Parent = Gui
+	ShadowFrame.AnchorPoint = Vector2.new(0.5,1)
+	ShadowFrame.Position = UDim2.new(0.5,0,1,0)
+	ShadowFrame.Size = UDim2.new(1,0,1.05,0)
+	ShadowFrame.BackgroundTransparency = 1
+	ShadowFrame.Image = "rbxassetid://4576475446"
+	ShadowFrame.ImageTransparency = 0.3
+	ShadowFrame.ZIndex = 10
+end
+
+Bloom.Intensity = 1
+Bloom.Size = 2
+Bloom.Threshold = 2
+
+Blur.Size = 0
+
+ColorCor.Brightness = 0.1
+ColorCor.Contrast = 0
+ColorCor.Saturation = -0.3
+ColorCor.TintColor = Color3.fromRGB(107, 78, 173)
+
+SunRays.Intensity = 0.03
+SunRays.Spread = 0.727
+
+Sky.SkyboxBk = "http://www.roblox.com/asset/?id=8139677359"
+Sky.SkyboxDn = "http://www.roblox.com/asset/?id=8139677253"
+Sky.SkyboxFt = "http://www.roblox.com/asset/?id=8139677111"
+Sky.SkyboxLf = "http://www.roblox.com/asset/?id=8139676988"
+Sky.SkyboxRt = "http://www.roblox.com/asset/?id=8139676842"
+Sky.SkyboxUp = "http://www.roblox.com/asset/?id=8139676647"
+Sky.SunAngularSize = 10
+
+Lighting.Ambient = Color3.fromRGB(128,128,128)
+Lighting.Brightness = 2
+Lighting.ColorShift_Bottom = Color3.fromRGB(0,0,0)
+Lighting.ColorShift_Top = Color3.fromRGB(0,0,0)
+Lighting.EnvironmentDiffuseScale = 0.2
+Lighting.EnvironmentSpecularScale = 0.2
+Lighting.GlobalShadows = false
+Lighting.OutdoorAmbient = Color3.fromRGB(0,0,0)
+Lighting.ShadowSoftness = 0.2
+Lighting.ClockTime = 14
+Lighting.GeographicLatitude = 45
+Lighting.ExposureCompensation = 0.5
+
+        end
+    end,
+    Default = false,
+    HoverText = "Lightning Perfected To Style >> Void"
+})
+
+LIB("Render", {
+    Name = "~> Void",
+    HoverText = "Signature Void >> Blatant Req",
+    Function = function(v)
+        if v then
+            game.Lighting.Sky.SkyboxBk = "http://www.roblox.com/asset/?id=9851144466"
+            game.Lighting.Sky.SkyboxDn = "http://www.roblox.com/asset/?id=9851144249"
+            game.Lighting.Sky.SkyboxFt = "http://www.roblox.com/asset/?id=9851144099"
+            game.Lighting.Sky.SkyboxLf = "http://www.roblox.com/asset/?id=9851143942"
+            game.Lighting.Sky.SkyboxRt = "http://www.roblox.com/asset/?id=9851143761"
+            game.Lighting.Sky.SkyboxUp = "http://www.roblox.com/asset/?id=9851143257"
+            game.Lighting.FogColor = Color3.new(236, 88, 241)
+            game.Lighting.FogEnd = "200"
+            game.Lighting.FogStart = "0"
+            game.Lighting.Ambient = Color3.new(0.5, 0, 1)
+        else
+            game.Lighting.Sky.SkyboxBk = "http://www.roblox.com/asset/?id=7018684000"
+            game.Lighting.Sky.SkyboxDn = "http://www.roblox.com/asset/?id=6334928194"
+            game.Lighting.Sky.SkyboxFt = "http://www.roblox.com/asset/?id=7018684000"
+            game.Lighting.Sky.SkyboxLf = "http://www.roblox.com/asset/?id=7018684000"
+            game.Lighting.Sky.SkyboxRt = "http://www.roblox.com/asset/?id=7018684000"
+            game.Lighting.Sky.SkyboxUp = "http://www.roblox.com/asset/?id=7018689553"
+            game.Lighting.FogColor = Color3.new(1, 1, 1)
+            game.Lighting.FogEnd = "10000"
+            game.Lighting.FogStart = "0"
+            game.Lighting.Ambient = Color3.new(0, 0, 0)
+        end
+    end
+})
+
